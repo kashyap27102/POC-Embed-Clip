@@ -21,7 +21,9 @@ const MusicPlayerCard = () => {
   };
 
   const handleShare = () => {
-    navigator.clipboard.writeText("https://example.com/song");
+    navigator.clipboard.writeText(
+      "https://www2.cs.uic.edu/~i101/SoundFiles/BabyElephantWalk60.wav"
+    );
     alert("Song link copied to clipboard!");
   };
 
