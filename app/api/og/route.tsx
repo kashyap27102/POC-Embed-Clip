@@ -1,3 +1,4 @@
+import MusicPlayerCard from "@/app/components/MusicPlayerCard";
 import { ImageResponse } from "next/og";
 // App router includes @vercel/og.
 // No need to install it.
@@ -5,27 +6,8 @@ import { ImageResponse } from "next/og";
 export const runtime = "edge";
 
 export async function GET() {
-  return new ImageResponse(
-    (
-      <div
-        style={{
-          fontSize: 40,
-          color: "black",
-          background: "white",
-          width: "100%",
-          height: "100%",
-          padding: "50px 200px",
-          textAlign: "center",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        👋 Hello
-      </div>
-    ),
-    {
-      width: 1200,
-      height: 300,
-    }
-  );
+  return new ImageResponse(<MusicPlayerCard />, {
+    width: 1200,
+    height: 300,
+  });
 }
