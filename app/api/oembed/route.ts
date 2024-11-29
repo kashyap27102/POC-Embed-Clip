@@ -29,7 +29,7 @@ export async function GET(request: Request) {
       "https://poc-embed-clip.vercel.app/assets/audio-thumbnail.jpg",
     html: `
       <iframe
-        src="https://poc-embed-clip.vercel.app/embed/track/${audioId}"
+        src="https://poc-embed-clip.vercel.app/embed/audio/${audioId}"
         width="300"
         height="150"
         frameborder="0"

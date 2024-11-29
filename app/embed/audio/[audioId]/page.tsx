@@ -6,7 +6,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Song title",
     description: "Song description",
-
     images: [
       {
         url: "https://poc-embed-clip.vercel.app/api/og",
@@ -14,8 +13,6 @@ export const metadata: Metadata = {
         height: 600,
       },
     ],
-    // type: "music.song",
-    // audio: "https://www2.cs.uic.edu/~i101/SoundFiles/BabyElephantWalk60.wav",
   },
 };
 

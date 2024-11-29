@@ -4,7 +4,9 @@ import React from "react";
 const page = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
-      <MusicPlayerCard />
+      <div className="w-96">
+        <MusicPlayerCard />
+      </div>
     </div>
   );
 };

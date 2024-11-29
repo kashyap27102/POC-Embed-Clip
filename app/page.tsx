@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   openGraph: {
@@ -12,11 +13,15 @@ export const metadata: Metadata = {
         height: 600,
       },
     ],
-    // type: "music.song",
-    // audio: "https://www2.cs.uic.edu/~i101/SoundFiles/BabyElephantWalk60.wav",
   },
 };
 
 export default function Home() {
-  return <>Hello</>;
+  return (
+    <div className="bg-gray-900 text-white min-h-screen">
+      <button className="bg-slate-300 text-black p-2 rounded-lg">
+        <Link href="/audio/3535">Go to Music</Link>
+      </button>
+    </div>
+  );
 }

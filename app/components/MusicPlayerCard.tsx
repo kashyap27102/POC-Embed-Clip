@@ -21,9 +21,7 @@ const MusicPlayerCard = () => {
   };
 
   const handleShare = () => {
-    navigator.clipboard.writeText(
-      "https://www2.cs.uic.edu/~i101/SoundFiles/BabyElephantWalk60.wav"
-    );
+    navigator.clipboard.writeText("");
     alert("Song link copied to clipboard!");
   };
 
@@ -45,8 +43,6 @@ const MusicPlayerCard = () => {
   };
 
   useEffect(() => {
-    console.log("useEffect");
-
     const audio = audioRef.current;
     if (audio) {
       audio.addEventListener("timeupdate", updateProgress);
