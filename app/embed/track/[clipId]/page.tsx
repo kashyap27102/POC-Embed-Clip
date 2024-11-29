@@ -20,11 +20,7 @@ export const metadata: Metadata = {
 };
 
 const page = () => {
-  return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
-      <MusicPlayerCard />
-    </div>
-  );
+  return <MusicPlayerCard />;
 };
 
 export default page;
