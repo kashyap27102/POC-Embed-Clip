@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import MusicPlayerCard from "./components/MusicPlayerCard";
 
 export const metadata: Metadata = {
   openGraph: {
@@ -19,11 +18,5 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  return (
-    <>
-      <div className="flex flex-col items-center justify-center min-h-screen">
-        <MusicPlayerCard />
-      </div>
-    </>
-  );
+  return <>Hello</>;
 }

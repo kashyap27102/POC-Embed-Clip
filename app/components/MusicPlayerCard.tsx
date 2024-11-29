@@ -57,7 +57,7 @@ const MusicPlayerCard = () => {
   }, []);
 
   return (
-    <div className="w-96 bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white rounded-xl shadow-lg p-6">
+    <div className="w-full h-full bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white rounded-xl shadow-lg p-6">
       {/* Audio Element */}
       <audio
         ref={audioRef}
@@ -71,7 +71,7 @@ const MusicPlayerCard = () => {
           alt="Album Cover"
           width={500}
           height={300}
-          className="rounded-lg shadow-md"
+          className="rounded-lg shadow-md w-full "
         />
       </div>
 
